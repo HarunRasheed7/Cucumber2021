@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="45.373">
+<testcase classname="Test login functionality" name="Check login" time="16.897">
+<system-out><![CDATA[Given User is in the login page.............................................passed
+When User enters the Harun and 12345........................................passed
+And User clicks enter.......................................................passed
+Then User is in the Homepage................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test login functionality" name="Check login 2" time="14.063">
+<system-out><![CDATA[Given User is in the login page.............................................passed
+When User enters the jack and 12345.........................................passed
+And User clicks enter.......................................................passed
+Then User is in the Homepage................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test login functionality" name="Check login 3" time="13.542">
+<failure message="" type="java.lang.AssertionError"><![CDATA[Given User is in the login page.............................................passed
+When User enters the Rose and 2323..........................................passed
+And User clicks enter.......................................................passed
+Then User is in the Homepage................................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at StepDefinitions.LoginDemoSteps.user_is_in_the_homepage(LoginDemoSteps.java:37)
+	at ✽.User is in the Homepage(file:///C:/Users/Ansari/eclipse-workspace/CucumberDec/src/test/resources/Features/LoginDemo.feature:7)
+]]></failure>
+</testcase>
+</testsuite>
