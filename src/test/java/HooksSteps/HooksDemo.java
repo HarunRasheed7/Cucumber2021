@@ -14,7 +14,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class HooksDemo {
 	WebDriver driver =null;
-	
+
 	@Before(value="@smoke",order=1)
 	public void browserSetup() {
 		System.out.println("I am inside browser setup");
@@ -23,32 +23,32 @@ public class HooksDemo {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 	}
-	
-	
+
+
 	@Before(order=2)
 	public void setup2() {
 		System.out.println("Inside setup2");
 	}
-	
-	
+
+
 	@After(order=1)
 	public void teardown() {
 		System.out.println("I am inside teardown ");
 		driver.close();
 		driver.quit();
 	}
-	
-	
+
+
 	@After(order=2)
 	public void teardown2() {
 		System.out.println("Inside teardown2");
 	}
-	
+
 	@BeforeStep
 	public void beforeSteps() {
 		System.out.println("I am in before steps");
 	}
-	
+
 	@AfterStep
 	public void afterSteps() {
 		System.out.println("I am in After steps");
