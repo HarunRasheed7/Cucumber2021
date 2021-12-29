@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="1.19">
-<testcase classname="To check Background Function" name="To validate mobiles" time="0.398">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="0.334">
+<testcase classname="To check Background Function" name="To validate mobiles" time="0.041">
 <system-out><![CDATA[Given user is the login page................................................passed
 When User gives the credential..............................................passed
 Then user navigated to Homepage.............................................passed
@@ -8,7 +8,7 @@ When User clicks the mobile link............................................pass
 Then User navigated to the mobile page......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To check Background Function" name="To validate laptops" time="0.018">
+<testcase classname="To check Background Function" name="To validate laptops" time="0.098">
 <system-out><![CDATA[Given user is the login page................................................passed
 When User gives the credential..............................................passed
 Then user navigated to Homepage.............................................passed

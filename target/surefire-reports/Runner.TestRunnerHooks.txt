@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: Runner.TestRunnerHooks
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 24.755 sec <<< FAILURE!
+sample 2(Feature for hooks demo)  Time elapsed: 0.063 sec  <<< ERROR!
+java.lang.NullPointerException
+	at HooksSteps.HooksDemo.teardown(HooksDemo.java:37)
+
